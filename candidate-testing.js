@@ -56,10 +56,10 @@ console.log("Your Answer: " +candidateAnswers[j]);
 }
   let grade =" ";
  let result =(correctCount/totalquestion)*100;
-if(result < 80)
-grade= "Failed";
-else
+if(result >= 80)
 grade= "Passed";
+else
+grade= "Failed";
 console.log(">>> Overall Grade: "+result+"% ("+ correctCount +" out of " + questions.length+") <<<");
 console.log(">>> Status: "+grade+ " <<<");
 
