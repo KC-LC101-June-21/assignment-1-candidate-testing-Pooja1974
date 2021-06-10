@@ -56,21 +56,21 @@ console.log("Your Answer: " +candidateAnswers[j]);
   if(candidateAnswers[j].toLowerCase()==correctAnswers[j].toLowerCase())
  correctCount++;
 }
-  let grade =" ";
- let result =((correctCount)/(totalquestion))*100;
-if(result >= 80)
-grade ="Passed"
+  let result =" ";
+ let grade=((correctCount)/(totalquestion))*100;
+if(grade >= 80)
+result ="Passed"
 else
-grade="Failed";
+result="Failed";
 
-console.log(">>> Overall Grade: "+result+"% ("+ correctCount +" out of " + questions.length+") <<<");
+console.log(">>> Overall Grade: "+grade+"% ("+ correctCount +" out of " + questions.length+") <<<");
 
-console.log(">> Status: "+ grade +" <<");
-
-
+console.log(">> Status: "+ result +" <<");
 
 
-  return grade;
+
+
+  return result;
 }
 
 function runProgram() {
